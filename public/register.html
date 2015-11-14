@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+  <meta charset="utf-8">
+  <title>註冊 - 海軍通信系統指揮部</title>
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <style>
+    body{
+      width: 1000px;
+      margin:0 auto;
+      font-family: sans-serif, "微軟正黑體";
+      background-color: #E9EAED;
+    }
+    ul,p{margin: 0}
+    p+p{margin-top:10px;}
+    #header{
+      /*background-color: #425660;*/
+      padding: 5px;
+      text-align: center;
+    }
+    #header>h1{
+      margin-top:10px;
+      margin-bottom: 4px;
+    }
+    #header>h1::after{
+      content: "";
+      width: 100px;
+      display: inline-block;
+    }
+    .logo{
+      margin-right: 20px;
+      width:80px;
+    }
+    #nav{
+      /*background-color: #20292F;*/
+      padding: 4px;
+    }
+    #nav ul{
+      margin: 0;
+      padding: 10px;
+      list-style: none;
+      text-align: center;
+      background-color: #FFFFFF;
+      border: 1px solid;
+      border-color: #e5e6e9 #dfe0e4 #d0d1d5;
+      border-radius: 3px;
+    }
+    #nav li{
+      margin: 0;
+      display: inline;
+      border-left: 1px solid #d0d1d5;
+    }
+
+    #nav a{
+      padding: 5px 20px;
+      text-decoration: none;
+      font-weight: bold;
+      color: #000000;
+      border-radius: 3px;
+    }
+    #nav a:hover{
+      background-color: #EEEEEE;
+    }
+
+
+    #aside1{
+      width: 200px;
+      padding: 4px;
+      float: left;
+    }
+    #aside2{
+      width: 250px;
+      padding: 4px;
+      float: right;
+    }
+    aside>div{
+      margin:0 0 8px;
+      padding: 10px;
+      border: 1px solid;
+      border-color: #e5e6e9 #dfe0e4 #d0d1d5;
+      border-radius: 3px;
+      background-color: #FFFFFF;
+    }
+    .has-title{
+      padding:0px;
+    }
+    .has-title>div{
+      padding:10px;
+    }
+    .has-title>div:first-child{
+      padding: 5px;
+      border-bottom: 1px solid #dfe0e4;
+      text-align: center;
+      font-weight: bold;
+    }
+    #useful-links ul{
+      margin-left: 0; padding-left: 1em;
+      list-style-type: none;
+    }
+    #schedule ul{
+      margin-left: 0; padding-left: 1.5em;
+    }
+    #user-login{
+      text-align: center;
+    }
+
+    #section{
+      margin: 0px auto;
+      padding: 4px;
+      width: 600px;
+    }
+    section>div{
+      margin:0 0 8px;
+      padding: 20px;
+      border: 1px solid;
+      border-color: #e5e6e9 #dfe0e4 #d0d1d5;
+      border-radius: 3px;
+      background-color: #FFFFFF;
+    }
+    #footer{
+      padding:20px;
+      clear: both;
+    }
+    .input-group{
+      margin-bottom: 4px;
+    }
+  </style>
+</head>
+
+<body>
+  <header id="header">
+    <h1><img src="images/logo.gif" class="logo">海軍通信系統指揮部</h1>
+  </header>
+
+  <nav id="nav">
+    <ul>
+      <li><a href="index.html">首頁</a></li><li><a href="#">本部沿革</a></li><li><a href="#">本部各隊臺</a></li><li><a href="#">我們的大家長</a></li><li><a href="life.html">生活花絮</a></li><li><a href="#">網網相連</a></li>
+    </ul>
+  </nav>
+
+  <section id="section">
+    <div>
+      <form class="form-horizontal">
+      <h2 class="text-center" style="margin-top:10px">註冊</h2>
+                <hr>
+
+        <div class="form-group has-feedback">
+            <label class="control-label col-xs-4" for="lastname">帳號（身分證字號）：</label>
+            <div class="col-xs-8">
+                <input class="form-control" type="text" name="lastname" id="lastname" placeholder="" aria-describedby="lastnameStatus" data-container="body" data-toggle="popover" data-placement="left" data-trigger="focus" data-content="" value="">
+                <span class="glyphicon form-control-feedback" aria-hidden="true"></span>
+                <span id="lastnameStatus" class="sr-only"></span>
+            </div>
+        </div>
+        <div class="form-group has-feedback">
+            <label class="control-label col-xs-4" for="lastname">中文姓名：</label>
+            <div class="col-xs-8">
+                <input class="form-control" type="text" name="lastname" id="lastname" placeholder="" aria-describedby="lastnameStatus" data-container="body" data-toggle="popover" data-placement="left" data-trigger="focus" data-content="" value="">
+                <span class="glyphicon form-control-feedback" aria-hidden="true"></span>
+                <span id="lastnameStatus" class="sr-only"></span>
+            </div>
+        </div>
+                    <div class="form-group has-feedback">
+                        <label class="control-label col-xs-4" for="password">登入密碼：</label>
+                        <div class="col-xs-8">
+                            <input type="password" class="form-control" name="password" id="password" placeholder="是否需設定限制？" aria-describedby="passwordStatus" data-container="body" data-toggle="popover" data-placement="left" data-trigger="focus" data-content="" value="">
+                            <span class="glyphicon form-control-feedback" aria-hidden="true"></span>
+                            <span id="passwordStatus" class="sr-only"></span>
+                        </div>
+                    </div>
+                    <div class="form-group has-feedback">
+                        <label class="control-label col-xs-4" for="password_confirmation">確認密碼：</label>
+                        <div class="col-xs-8">
+                            <input type="password" class="form-control" name="password_confirmation" id="password_confirmation" aria-describedby="password_confirmationStatus" data-container="body" data-toggle="popover" data-placement="left" data-trigger="focus" data-content="" value="">
+                            <span class="glyphicon form-control-feedback" aria-hidden="true"></span>
+                            <span id="password_confirmationStatus" class="sr-only"></span>
+                        </div>
+                    </div>
+
+                    <div class="form-group  has-feedback">
+                        <label class="control-label col-xs-4" for="birth-y">所屬單位：</label>
+                        <div class="col-xs-8">
+                          <select class="form-control">
+                            <option value="">通信系統指揮部</option>
+                            <option value="">部本部</option>
+                            <option value="">通資綜合科</option>
+                            <option value="">通資安全科</option>
+                            <option value="">電子系統科</option>
+                            <option value="">左營通信隊</option>
+                            <option value="">左營通信隊 - 修護區隊</option>
+                            <option value="">左營通信隊 - 作業區隊</option>
+                            <option value="">左營通信隊 - 龍泉發射台</option>
+                            <option value="">臺北通信隊</option>
+                            <option value="">臺北通信隊 - 修護區隊</option>
+                            <option value="">臺北通信隊 - 作業區隊</option>
+                            <option value="">臺北通信隊 - AOC 區隊</option>
+                            <option value="">臺北通信隊 - 基隆區隊</option>
+                            <option value="">臺北通信隊 - 淡水發射臺</option>
+                            <option value="">臺北通信隊 - 八里發射臺</option>
+                            <option value="">臺北通信隊 - 三芝天線場</option>
+                            <option value="">臺北通信隊 - 綠坵山發射臺</option>
+                            <option value="">蘇澳通信隊</option>
+                            <option value="">蘇澳通信隊 - 修護區隊</option>
+                            <option value="">蘇澳通信隊 - 作業區隊</option>
+                            <option value="">蘇澳通信隊 - 花蓮區隊</option>
+                            <option value="">馬公通信隊</option>
+                            <option value="">馬公通信隊 - 修護區隊</option>
+                            <option value="">馬公通信隊 - 作業區隊</option>
+                            <option value="">馬公通信隊 - 菜園發射臺</option>
+                          </select>
+                        </div>
+                    </div>
+                    <div class="form-group  has-feedback">
+                        <label class="control-label col-xs-4" for="birth-y">階級：</label>
+                        <div class="col-xs-8">
+                          <select class="form-control">
+                            <optgroup label="校官">
+                              <option value="">上校</option>
+                              <option value="">中校</option>
+                              <option value="">少校</option>
+                            </optgroup>
+                            <optgroup label="尉官">
+                              <option value="">上尉</option>
+                              <option value="">中尉</option>
+                              <option value="">少尉</option>
+                            </optgroup>
+                            <optgroup label="士官">
+                              <option value="">士官長</option>
+                              <option value="">上士</option>
+                              <option value="">中士</option>
+                              <option value="">下士</option>
+                            </optgroup>
+                            <optgroup label="士兵">
+                              <option value="">上兵</option>
+                              <option value="">一兵</option>
+                              <option value="">二兵</option>
+                            </optgroup>
+                          </select>
+                        </div>
+                    </div>
+                    <div class="form-group has-feedback">
+                        <label class="control-label col-xs-4" for="firstname">職稱：</label>
+                        <div class="col-xs-8">
+                            <input type="text" class="form-control" name="firstname" id="firstname" placeholder="" aria-describedby="firstnameStatus" data-container="body" data-toggle="popover" data-placement="left" data-trigger="focus" data-content="" value="">
+                            <span class="glyphicon form-control-feedback" aria-hidden="true"></span>
+                            <span id="firstnameStatus" class="sr-only"></span>
+                        </div>
+                    </div>
+                    <div class="form-group has-feedback">
+                        <label class="control-label col-xs-4" for="sex">役別：</label>
+                        <div class="col-xs-8">
+                            <label class="radio-inline">
+                              <input type="radio" name="sex" id="sex_f" value="female"> 志願役
+                            </label>
+                            <label class="radio-inline">
+                              <input type="radio" name="sex" id="sex_m" value="male"> 義務役 <span class="glyphicon form-control-feedback" aria-hidden="true"></span>
+                            </label>
+                            <span id="sexStatus" class="sr-only"></span>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label class="control-label col-xs-4"></label>
+                        <div class="col-xs-8">
+                            <a href="index-g.html" class="btn btn-primary">確認送出</a>
+                        </div>
+                    </div>
+
+      </form>
+    </div>
+  </section>
+
+  <footer id="footer">
+  </footer>
+<script src="js/jquery-2.1.4.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+</body>
+</html>

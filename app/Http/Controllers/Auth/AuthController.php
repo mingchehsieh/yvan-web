@@ -23,6 +23,10 @@ class AuthController extends Controller
 
     use AuthenticatesAndRegistersUsers, ThrottlesLogins;
 
+    protected $redirectTo = '/';
+    protected $loginPath = '/';
+    protected $username = 'uid';
+
     /**
      * Create a new authentication controller instance.
      *
@@ -42,9 +46,21 @@ class AuthController extends Controller
     protected function validator(array $data)
     {
         return Validator::make($data, [
+            'uid' => 'required|regex:"^[a-zA-Z]{1}[1-2]{1}[0-9]{8}$"|unique:users',
             'name' => 'required|max:255',
-            'email' => 'required|email|max:255|unique:users',
-            'password' => 'required|confirmed|min:6',
+            'password' => 'required|confirmed',
+            'unit' => 'required',
+            'rank' => 'required',
+            'title' => 'required|max:255',
+            'serviceType' => 'required',
+        ])->setAttributeNames([
+            'uid' => '帳號（身分證字號）',
+            'name' => '中文姓名',
+            'password' => '登入密碼',
+            'unit' => '所屬單位',
+            'rank' => '階級',
+            'title' => '職稱',
+            'serviceType' => '役別',
         ]);
     }
 
@@ -57,8 +73,12 @@ class AuthController extends Controller
     protected function create(array $data)
     {
         return User::create([
+            'uid' => $data['uid'],
             'name' => $data['name'],
-            'email' => $data['email'],
+            'unit' => $data['unit'],
+            'rank' => $data['rank'],
+            'title' => $data['title'],
+            'serviceType' => $data['serviceType'],
             'password' => bcrypt($data['password']),
         ]);
     }

@@ -1,0 +1,123 @@
+body{
+  width: 1000px;
+  margin:0 auto;
+  background-color: #E9EAED;
+}
+
+ul{margin: 0}
+p+p{margin:10px 0 0;}
+
+#header{
+  margin: 4px 4px 0;
+  padding: 10px;
+  text-align: center;
+  background-color: #FFFFFF;
+  border-top: 1px solid #e5e6e9;
+  border-left: 1px solid #dfe0e4;
+  border-right: 1px solid #dfe0e4;
+  border-top-left-radius: 3px;
+  border-top-right-radius: 3px;
+}
+#header>h1{
+  margin:0px;
+}
+#header>h1::after{
+  content: "";
+  width: 90px;
+  display: inline-block;
+}
+#nav{
+  margin: 0 4px 4px;
+  text-align: center;
+  background-color: #FFFFFF;
+  border: 1px solid;
+  border-color: #dfe0e4 #dfe0e4 #d0d1d5;
+  border-bottom-left-radius: 3px;
+  border-bottom-right-radius: 3px;
+}
+#nav ul{
+  margin: 0;
+  padding: 10px;
+  list-style: none;
+}
+#nav li{
+  margin: 0;
+  display: inline;
+  border-left: 1px solid #d0d1d5;
+}
+
+#nav a{
+  padding: 5px 20px;
+  text-decoration: none;
+  color: #000000;
+  border-radius: 3px;
+}
+#nav a:hover{
+  background-color: #EEEEEE;
+}
+
+
+#aside1{
+  width: 200px;
+  padding: 4px;
+  float: left;
+}
+#aside2{
+  width: 250px;
+  padding: 4px;
+  float: right;
+}
+aside>div{
+  margin:0 0 8px;
+  padding: 10px;
+  border: 1px solid;
+  border-color: #e5e6e9 #dfe0e4 #d0d1d5;
+  border-radius: 3px;
+  background-color: #FFFFFF;
+}
+.has-title{
+  padding:0px;
+}
+.has-title>div{
+  padding:10px;
+}
+.has-title>div:first-child{
+  padding: 5px;
+  border-bottom: 1px solid #dfe0e4;
+  text-align: center;
+  font-weight: bold;
+}
+#useful-links ul{
+  margin-left: 0; padding-left: 1em;
+  list-style-type: none;
+}
+#schedule ul{
+  margin-left: 0; padding-left: 1.5em;
+}
+#user-login{
+  text-align: center;
+}
+
+#section{
+  padding: 4px;
+  width: 550px;
+  float: left;
+}
+section>div{
+  margin:0 0 8px;
+  padding: 10px;
+  border: 1px solid;
+  border-color: #e5e6e9 #dfe0e4 #d0d1d5;
+  border-radius: 3px;
+  background-color: #FFFFFF;
+}
+#footer{
+  padding:20px;
+  clear: both;
+}
+.input-group{
+  margin-bottom: 4px;
+}
+.max-last2-td td:not(:nth-last-child(2)) {width: 1px; word-break: keep-all; white-space: nowrap;}
+.max-last2-td td:nth-last-child(2) {word-break: break-all;}
+.max-last2-td th {word-break: keep-all; white-space: nowrap;}

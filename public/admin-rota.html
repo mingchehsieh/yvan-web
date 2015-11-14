@@ -1,0 +1,451 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+  <meta charset="utf-8">
+  <title>後台管理 - 當值人員 - 海軍通信系統指揮部</title>
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/default2.css">
+</head>
+<body>
+  <header id="header">
+    <h1><img src="images/logo.gif" width="80"> 海軍通信系統指揮部</h1>
+  </header>
+
+  <nav id="nav">
+    <ul>
+      <li><a href="index.html">首頁</a></li><li><a href="#">本部沿革</a></li><li><a href="#">本部各隊臺</a></li><li><a href="#">我們的大家長</a></li><li><a href="life.html">生活花絮</a></li><li><a href="#">網網相連</a></li>
+    </ul>
+  </nav>
+
+  <aside id="aside1">
+    <div id="user-login">
+      <p>ＯＯＯ長官您好<br>
+      歡迎您的登入</p>
+
+          <div class="btn-group btn-group-justified" role="group" aria-label="...">
+            <div class="btn-group btn-group-sm" role="group">
+              <a href="index-g.html" class="btn btn-default">登出</a>
+            </div>
+          </div>
+    </div>
+    <div id="useful-links">
+      <ul>
+        <li><strong>後台管理</strong>
+          <ul>
+            <li><a href="admin-news.html">最新消息</a></li>
+            <li><a href="admin-life.html">生活花絮</a></li>
+            <li><a href="admin-rota.html">當值人員</a></li>
+            <li><a href="#">通況系統</a></li>
+            <li><a href="admin-bulletin.html">網頁公告</a></li>
+            <li><a href="admin-line.html">線傳系統</a></li>
+            <li><a href="admin-knowledge.html">知識庫</a></li>
+            <li><a href="admin-guide.html">宣教專區</a></li>
+            <li><a href="admin-user.html">人員管理</a></li>
+          </ul>
+        </li>
+        <li><strong>常用連結</strong>
+          <ul>
+            <li><a href="#">國軍電子郵件</a></li>
+            <li><a href="#">電話查詢</a></li>
+          </ul>
+        </li>
+        <li><strong>本部專用系統</strong>
+          <ul>
+            <li><a href="#">通況管理系統</a></li>
+            <li><a href="bulletin.html">網頁公告</a></li>
+            <li><a href="line.html">線傳系統</a></li>
+            <li><a href="knowledge.html">知識庫</a></li>
+            <li><a href="guide.html">宣教專區</a></li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+  </aside>
+
+  <section id="section">
+    <div>
+      <ol class="breadcrumb">
+        <li><a href="#">後台管理</a></li>
+        <li class="active">當值人員</li>
+      </ol>
+      <form class="form-inline">
+        <div class="form-group">
+          <label for="">年份：</label>
+          <select class="form-control">
+            <option value="">104</option>
+            <option value="">105</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label for="">月份：</label>
+          <select class="form-control">
+            <option value="">1</option>
+            <option value="">2</option>
+            <option value="">3</option>
+            <option value="">4</option>
+            <option value="">5</option>
+            <option value="" selected>6</option>
+            <option value="">7</option>
+            <option value="">8</option>
+            <option value="">9</option>
+            <option value="">10</option>
+            <option value="">11</option>
+            <option value="">12</option>
+          </select>
+        </div>
+        <a href="#" class="btn btn-default">送出</a>
+        <a href="admin-rota2.html" class="btn btn-default">編輯群組</a>
+      </form><hr>
+      <form>
+      <table class="table table-striped text-center">
+        <thead>
+          <tr>
+            <th style="width:14.28%;text-align:center">星期日</th>
+            <th style="width:14.28%;text-align:center">星期一</th>
+            <th style="width:14.28%;text-align:center">星期二</th>
+            <th style="width:14.28%;text-align:center">星期三</th>
+            <th style="width:14.28%;text-align:center">星期四</th>
+            <th style="width:14.28%;text-align:center">星期五</th>
+            <th style="width:14.28%;text-align:center">星期六</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td></td>
+            <td>6/1</td>
+            <td>6/2</td>
+            <td>6/3</td>
+            <td>6/4</td>
+            <td>6/5</td>
+            <td>6/6</td>
+          </tr>
+          <tr>
+            <td></td>
+            <td><p class="text-danger">ＡＡＡ</p><p class="text-success">ＥＥＥ</p><p class="text-primary">ＧＧＧ</p></td>
+            <td><select class="form-control" style="color:rgb(169, 68, 66)"><option value="">ＡＡＡ</option>
+            <option value="">ＢＢＢ</option>
+            <option value="">ＣＣＣ</option>
+            <option value="">ＤＤＤ</option></select>
+            <select class="form-control" style="color:rgb(60, 118, 61)"><option value="">ＥＥＥ</option>
+            <option value="">ＦＦＦ</option></select>
+            <select class="form-control" style="color:rgb(51, 122, 183)"><option value="">ＧＧＧ</option>
+            <option value="">ＨＨＨ</option>
+            <option value="">ＩＩＩ</option></select></td>
+            <td><select class="form-control" style="color:rgb(169, 68, 66)"><option value="">ＡＡＡ</option>
+            <option value="">ＢＢＢ</option>
+            <option value="">ＣＣＣ</option>
+            <option value="">ＤＤＤ</option></select>
+            <select class="form-control" style="color:rgb(60, 118, 61)"><option value="">ＥＥＥ</option>
+            <option value="">ＦＦＦ</option></select>
+            <select class="form-control" style="color:rgb(51, 122, 183)"><option value="">ＧＧＧ</option>
+            <option value="">ＨＨＨ</option>
+            <option value="">ＩＩＩ</option></select></td>
+            <td><select class="form-control" style="color:rgb(169, 68, 66)"><option value="">ＡＡＡ</option>
+            <option value="">ＢＢＢ</option>
+            <option value="">ＣＣＣ</option>
+            <option value="">ＤＤＤ</option></select>
+            <select class="form-control" style="color:rgb(60, 118, 61)"><option value="">ＥＥＥ</option>
+            <option value="">ＦＦＦ</option></select>
+            <select class="form-control" style="color:rgb(51, 122, 183)"><option value="">ＧＧＧ</option>
+            <option value="">ＨＨＨ</option>
+            <option value="">ＩＩＩ</option></select></td>
+            <td><select class="form-control" style="color:rgb(169, 68, 66)"><option value="">ＡＡＡ</option>
+            <option value="">ＢＢＢ</option>
+            <option value="">ＣＣＣ</option>
+            <option value="">ＤＤＤ</option></select>
+            <select class="form-control" style="color:rgb(60, 118, 61)"><option value="">ＥＥＥ</option>
+            <option value="">ＦＦＦ</option></select>
+            <select class="form-control" style="color:rgb(51, 122, 183)"><option value="">ＧＧＧ</option>
+            <option value="">ＨＨＨ</option>
+            <option value="">ＩＩＩ</option></select></td>
+            <td><select class="form-control" style="color:rgb(169, 68, 66)"><option value="">ＡＡＡ</option>
+            <option value="">ＢＢＢ</option>
+            <option value="">ＣＣＣ</option>
+            <option value="">ＤＤＤ</option></select>
+            <select class="form-control" style="color:rgb(60, 118, 61)"><option value="">ＥＥＥ</option>
+            <option value="">ＦＦＦ</option></select>
+            <select class="form-control" style="color:rgb(51, 122, 183)"><option value="">ＧＧＧ</option>
+            <option value="">ＨＨＨ</option>
+            <option value="">ＩＩＩ</option></select></td>
+          </tr>
+          <tr>
+            <td>6/7</td>
+            <td>6/8</td>
+            <td>6/9</td>
+            <td>6/10</td>
+            <td>6/11</td>
+            <td>6/12</td>
+            <td>6/13</td>
+          </tr>
+          <tr>
+            <td><select class="form-control" style="color:rgb(169, 68, 66)"><option value="">ＡＡＡ</option>
+            <option value="">ＢＢＢ</option>
+            <option value="">ＣＣＣ</option>
+            <option value="">ＤＤＤ</option></select>
+            <select class="form-control" style="color:rgb(60, 118, 61)"><option value="">ＥＥＥ</option>
+            <option value="">ＦＦＦ</option></select>
+            <select class="form-control" style="color:rgb(51, 122, 183)"><option value="">ＧＧＧ</option>
+            <option value="">ＨＨＨ</option>
+            <option value="">ＩＩＩ</option></select></td>
+            <td><select class="form-control" style="color:rgb(169, 68, 66)"><option value="">ＡＡＡ</option>
+            <option value="">ＢＢＢ</option>
+            <option value="">ＣＣＣ</option>
+            <option value="">ＤＤＤ</option></select>
+            <select class="form-control" style="color:rgb(60, 118, 61)"><option value="">ＥＥＥ</option>
+            <option value="">ＦＦＦ</option></select>
+            <select class="form-control" style="color:rgb(51, 122, 183)"><option value="">ＧＧＧ</option>
+            <option value="">ＨＨＨ</option>
+            <option value="">ＩＩＩ</option></select></td>
+            <td><select class="form-control" style="color:rgb(169, 68, 66)"><option value="">ＡＡＡ</option>
+            <option value="">ＢＢＢ</option>
+            <option value="">ＣＣＣ</option>
+            <option value="">ＤＤＤ</option></select>
+            <select class="form-control" style="color:rgb(60, 118, 61)"><option value="">ＥＥＥ</option>
+            <option value="">ＦＦＦ</option></select>
+            <select class="form-control" style="color:rgb(51, 122, 183)"><option value="">ＧＧＧ</option>
+            <option value="">ＨＨＨ</option>
+            <option value="">ＩＩＩ</option></select></td>
+            <td><select class="form-control" style="color:rgb(169, 68, 66)"><option value="">ＡＡＡ</option>
+            <option value="">ＢＢＢ</option>
+            <option value="">ＣＣＣ</option>
+            <option value="">ＤＤＤ</option></select>
+            <select class="form-control" style="color:rgb(60, 118, 61)"><option value="">ＥＥＥ</option>
+            <option value="">ＦＦＦ</option></select>
+            <select class="form-control" style="color:rgb(51, 122, 183)"><option value="">ＧＧＧ</option>
+            <option value="">ＨＨＨ</option>
+            <option value="">ＩＩＩ</option></select></td>
+            <td><select class="form-control" style="color:rgb(169, 68, 66)"><option value="">ＡＡＡ</option>
+            <option value="">ＢＢＢ</option>
+            <option value="">ＣＣＣ</option>
+            <option value="">ＤＤＤ</option></select>
+            <select class="form-control" style="color:rgb(60, 118, 61)"><option value="">ＥＥＥ</option>
+            <option value="">ＦＦＦ</option></select>
+            <select class="form-control" style="color:rgb(51, 122, 183)"><option value="">ＧＧＧ</option>
+            <option value="">ＨＨＨ</option>
+            <option value="">ＩＩＩ</option></select></td>
+            <td><select class="form-control" style="color:rgb(169, 68, 66)"><option value="">ＡＡＡ</option>
+            <option value="">ＢＢＢ</option>
+            <option value="">ＣＣＣ</option>
+            <option value="">ＤＤＤ</option></select>
+            <select class="form-control" style="color:rgb(60, 118, 61)"><option value="">ＥＥＥ</option>
+            <option value="">ＦＦＦ</option></select>
+            <select class="form-control" style="color:rgb(51, 122, 183)"><option value="">ＧＧＧ</option>
+            <option value="">ＨＨＨ</option>
+            <option value="">ＩＩＩ</option></select></td>
+            <td><select class="form-control" style="color:rgb(169, 68, 66)"><option value="">ＡＡＡ</option>
+            <option value="">ＢＢＢ</option>
+            <option value="">ＣＣＣ</option>
+            <option value="">ＤＤＤ</option></select>
+            <select class="form-control" style="color:rgb(60, 118, 61)"><option value="">ＥＥＥ</option>
+            <option value="">ＦＦＦ</option></select>
+            <select class="form-control" style="color:rgb(51, 122, 183)"><option value="">ＧＧＧ</option>
+            <option value="">ＨＨＨ</option>
+            <option value="">ＩＩＩ</option></select></td>
+          </tr>
+          <tr>
+            <td>6/14</td>
+            <td>6/15</td>
+            <td>6/16</td>
+            <td>6/17</td>
+            <td>6/18</td>
+            <td>6/19</td>
+            <td>6/20</td>
+          </tr>
+          <tr>
+            <td><select class="form-control" style="color:rgb(169, 68, 66)"><option value="">ＡＡＡ</option>
+            <option value="">ＢＢＢ</option>
+            <option value="">ＣＣＣ</option>
+            <option value="">ＤＤＤ</option></select>
+            <select class="form-control" style="color:rgb(60, 118, 61)"><option value="">ＥＥＥ</option>
+            <option value="">ＦＦＦ</option></select>
+            <select class="form-control" style="color:rgb(51, 122, 183)"><option value="">ＧＧＧ</option>
+            <option value="">ＨＨＨ</option>
+            <option value="">ＩＩＩ</option></select></td>
+            <td><select class="form-control" style="color:rgb(169, 68, 66)"><option value="">ＡＡＡ</option>
+            <option value="">ＢＢＢ</option>
+            <option value="">ＣＣＣ</option>
+            <option value="">ＤＤＤ</option></select>
+            <select class="form-control" style="color:rgb(60, 118, 61)"><option value="">ＥＥＥ</option>
+            <option value="">ＦＦＦ</option></select>
+            <select class="form-control" style="color:rgb(51, 122, 183)"><option value="">ＧＧＧ</option>
+            <option value="">ＨＨＨ</option>
+            <option value="">ＩＩＩ</option></select></td>
+            <td><select class="form-control" style="color:rgb(169, 68, 66)"><option value="">ＡＡＡ</option>
+            <option value="">ＢＢＢ</option>
+            <option value="">ＣＣＣ</option>
+            <option value="">ＤＤＤ</option></select>
+            <select class="form-control" style="color:rgb(60, 118, 61)"><option value="">ＥＥＥ</option>
+            <option value="">ＦＦＦ</option></select>
+            <select class="form-control" style="color:rgb(51, 122, 183)"><option value="">ＧＧＧ</option>
+            <option value="">ＨＨＨ</option>
+            <option value="">ＩＩＩ</option></select></td>
+            <td><select class="form-control" style="color:rgb(169, 68, 66)"><option value="">ＡＡＡ</option>
+            <option value="">ＢＢＢ</option>
+            <option value="">ＣＣＣ</option>
+            <option value="">ＤＤＤ</option></select>
+            <select class="form-control" style="color:rgb(60, 118, 61)"><option value="">ＥＥＥ</option>
+            <option value="">ＦＦＦ</option></select>
+            <select class="form-control" style="color:rgb(51, 122, 183)"><option value="">ＧＧＧ</option>
+            <option value="">ＨＨＨ</option>
+            <option value="">ＩＩＩ</option></select></td>
+            <td><select class="form-control" style="color:rgb(169, 68, 66)"><option value="">ＡＡＡ</option>
+            <option value="">ＢＢＢ</option>
+            <option value="">ＣＣＣ</option>
+            <option value="">ＤＤＤ</option></select>
+            <select class="form-control" style="color:rgb(60, 118, 61)"><option value="">ＥＥＥ</option>
+            <option value="">ＦＦＦ</option></select>
+            <select class="form-control" style="color:rgb(51, 122, 183)"><option value="">ＧＧＧ</option>
+            <option value="">ＨＨＨ</option>
+            <option value="">ＩＩＩ</option></select></td>
+            <td><select class="form-control" style="color:rgb(169, 68, 66)"><option value="">ＡＡＡ</option>
+            <option value="">ＢＢＢ</option>
+            <option value="">ＣＣＣ</option>
+            <option value="">ＤＤＤ</option></select>
+            <select class="form-control" style="color:rgb(60, 118, 61)"><option value="">ＥＥＥ</option>
+            <option value="">ＦＦＦ</option></select>
+            <select class="form-control" style="color:rgb(51, 122, 183)"><option value="">ＧＧＧ</option>
+            <option value="">ＨＨＨ</option>
+            <option value="">ＩＩＩ</option></select></td>
+            <td><select class="form-control" style="color:rgb(169, 68, 66)"><option value="">ＡＡＡ</option>
+            <option value="">ＢＢＢ</option>
+            <option value="">ＣＣＣ</option>
+            <option value="">ＤＤＤ</option></select>
+            <select class="form-control" style="color:rgb(60, 118, 61)"><option value="">ＥＥＥ</option>
+            <option value="">ＦＦＦ</option></select>
+            <select class="form-control" style="color:rgb(51, 122, 183)"><option value="">ＧＧＧ</option>
+            <option value="">ＨＨＨ</option>
+            <option value="">ＩＩＩ</option></select></td>
+          </tr>
+          <tr>
+            <td>6/21</td>
+            <td>6/22</td>
+            <td>6/23</td>
+            <td>6/24</td>
+            <td>6/25</td>
+            <td>6/26</td>
+            <td>6/27</td>
+          </tr>
+          <tr>
+            <td><select class="form-control" style="color:rgb(169, 68, 66)"><option value="">ＡＡＡ</option>
+            <option value="">ＢＢＢ</option>
+            <option value="">ＣＣＣ</option>
+            <option value="">ＤＤＤ</option></select>
+            <select class="form-control" style="color:rgb(60, 118, 61)"><option value="">ＥＥＥ</option>
+            <option value="">ＦＦＦ</option></select>
+            <select class="form-control" style="color:rgb(51, 122, 183)"><option value="">ＧＧＧ</option>
+            <option value="">ＨＨＨ</option>
+            <option value="">ＩＩＩ</option></select></td>
+            <td><select class="form-control" style="color:rgb(169, 68, 66)"><option value="">ＡＡＡ</option>
+            <option value="">ＢＢＢ</option>
+            <option value="">ＣＣＣ</option>
+            <option value="">ＤＤＤ</option></select>
+            <select class="form-control" style="color:rgb(60, 118, 61)"><option value="">ＥＥＥ</option>
+            <option value="">ＦＦＦ</option></select>
+            <select class="form-control" style="color:rgb(51, 122, 183)"><option value="">ＧＧＧ</option>
+            <option value="">ＨＨＨ</option>
+            <option value="">ＩＩＩ</option></select></td>
+            <td><select class="form-control" style="color:rgb(169, 68, 66)"><option value="">ＡＡＡ</option>
+            <option value="">ＢＢＢ</option>
+            <option value="">ＣＣＣ</option>
+            <option value="">ＤＤＤ</option></select>
+            <select class="form-control" style="color:rgb(60, 118, 61)"><option value="">ＥＥＥ</option>
+            <option value="">ＦＦＦ</option></select>
+            <select class="form-control" style="color:rgb(51, 122, 183)"><option value="">ＧＧＧ</option>
+            <option value="">ＨＨＨ</option>
+            <option value="">ＩＩＩ</option></select></td>
+            <td><select class="form-control" style="color:rgb(169, 68, 66)"><option value="">ＡＡＡ</option>
+            <option value="">ＢＢＢ</option>
+            <option value="">ＣＣＣ</option>
+            <option value="">ＤＤＤ</option></select>
+            <select class="form-control" style="color:rgb(60, 118, 61)"><option value="">ＥＥＥ</option>
+            <option value="">ＦＦＦ</option></select>
+            <select class="form-control" style="color:rgb(51, 122, 183)"><option value="">ＧＧＧ</option>
+            <option value="">ＨＨＨ</option>
+            <option value="">ＩＩＩ</option></select></td>
+            <td><select class="form-control" style="color:rgb(169, 68, 66)"><option value="">ＡＡＡ</option>
+            <option value="">ＢＢＢ</option>
+            <option value="">ＣＣＣ</option>
+            <option value="">ＤＤＤ</option></select>
+            <select class="form-control" style="color:rgb(60, 118, 61)"><option value="">ＥＥＥ</option>
+            <option value="">ＦＦＦ</option></select>
+            <select class="form-control" style="color:rgb(51, 122, 183)"><option value="">ＧＧＧ</option>
+            <option value="">ＨＨＨ</option>
+            <option value="">ＩＩＩ</option></select></td>
+            <td><select class="form-control" style="color:rgb(169, 68, 66)"><option value="">ＡＡＡ</option>
+            <option value="">ＢＢＢ</option>
+            <option value="">ＣＣＣ</option>
+            <option value="">ＤＤＤ</option></select>
+            <select class="form-control" style="color:rgb(60, 118, 61)"><option value="">ＥＥＥ</option>
+            <option value="">ＦＦＦ</option></select>
+            <select class="form-control" style="color:rgb(51, 122, 183)"><option value="">ＧＧＧ</option>
+            <option value="">ＨＨＨ</option>
+            <option value="">ＩＩＩ</option></select></td>
+            <td><select class="form-control" style="color:rgb(169, 68, 66)"><option value="">ＡＡＡ</option>
+            <option value="">ＢＢＢ</option>
+            <option value="">ＣＣＣ</option>
+            <option value="">ＤＤＤ</option></select>
+            <select class="form-control" style="color:rgb(60, 118, 61)"><option value="">ＥＥＥ</option>
+            <option value="">ＦＦＦ</option></select>
+            <select class="form-control" style="color:rgb(51, 122, 183)"><option value="">ＧＧＧ</option>
+            <option value="">ＨＨＨ</option>
+            <option value="">ＩＩＩ</option></select></td>
+          </tr>
+          <tr>
+            <td>6/28</td>
+            <td>6/29</td>
+            <td>6/30</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+          </tr>
+          <tr>
+            <td><select class="form-control" style="color:rgb(169, 68, 66)"><option value="">ＡＡＡ</option>
+            <option value="">ＢＢＢ</option>
+            <option value="">ＣＣＣ</option>
+            <option value="">ＤＤＤ</option></select>
+            <select class="form-control" style="color:rgb(60, 118, 61)"><option value="">ＥＥＥ</option>
+            <option value="">ＦＦＦ</option></select>
+            <select class="form-control" style="color:rgb(51, 122, 183)"><option value="">ＧＧＧ</option>
+            <option value="">ＨＨＨ</option>
+            <option value="">ＩＩＩ</option></select></td>
+            <td><select class="form-control" style="color:rgb(169, 68, 66)"><option value="">ＡＡＡ</option>
+            <option value="">ＢＢＢ</option>
+            <option value="">ＣＣＣ</option>
+            <option value="">ＤＤＤ</option></select>
+            <select class="form-control" style="color:rgb(60, 118, 61)"><option value="">ＥＥＥ</option>
+            <option value="">ＦＦＦ</option></select>
+            <select class="form-control" style="color:rgb(51, 122, 183)"><option value="">ＧＧＧ</option>
+            <option value="">ＨＨＨ</option>
+            <option value="">ＩＩＩ</option></select></td>
+            <td><select class="form-control" style="color:rgb(169, 68, 66)"><option value="">ＡＡＡ</option>
+            <option value="">ＢＢＢ</option>
+            <option value="">ＣＣＣ</option>
+            <option value="">ＤＤＤ</option></select>
+            <select class="form-control" style="color:rgb(60, 118, 61)"><option value="">ＥＥＥ</option>
+            <option value="">ＦＦＦ</option></select>
+            <select class="form-control" style="color:rgb(51, 122, 183)"><option value="">ＧＧＧ</option>
+            <option value="">ＨＨＨ</option>
+            <option value="">ＩＩＩ</option></select></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+          </tr>
+        </tbody>
+      </table>
+      <div class="row">
+        <div class="col-xs-12 text-center"><span style="color:rgb(169, 68, 66)">駐部官（紅）</span>、<span style="color:rgb(60, 118, 61)">理事官（綠）</span>、<span style="color:rgb(51, 122, 183)">值日官（藍）</span><a href="admin-rota2.html" class="btn btn-primary">確認送出</a></div>
+      </div>
+      
+      
+      </form>
+    </div>
+  </section>
+
+  <footer id="footer">
+  </footer>
+<script src="js/jquery-2.1.4.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+</body>
+</html>
